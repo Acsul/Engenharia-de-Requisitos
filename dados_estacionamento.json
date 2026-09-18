@@ -1,0 +1,20 @@
+{
+    "total_vagas": 10,
+    "carros_cadastrados": {
+        "AQ": "qa",
+        "FSFS": "sas",
+        "DSGKD": "nlvsv"
+    },
+    "vagas": {
+        "1": null,
+        "2": "AQ",
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": null,
+        "8": null,
+        "9": "FSFS",
+        "10": null
+    }
+}
