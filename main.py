@@ -74,3 +74,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+#eu tentei fazer algo decente mas usei IA para programar tudo e tentei entender o codigo se soubesse mais sobre python sairia mais coisas melhor
