@@ -1,36 +1,32 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/*
+ * PLANO (Passo 1):
+ * Problema: Calculadora de descontos para categorias de clientes (Comum, VIP e Premium).
+ * Variações testadas:
+ *   - Cliente COMUM (0% de desconto)
+ *   - Cliente VIP (10% de desconto)
+ *   - Cliente PREMIUM (20% de desconto)
+ * Padrão escolhido: Strategy.
+ */
 public class CalculadoraDescontoTest {
+
     @Test
-    public void testCalcularDescontoComum() {
+    void testDescontoClienteComum() {
         CalculadoraDesconto calc = new CalculadoraDesconto();
-        assertEquals(100.0, calc.calcular("Comum", 100.0));
+        assertEquals(100.0, calc.calcular("COMUM", 100.0));
     }
 
     @Test
-    public void testCalcularDescontoVIP() {
+    void testDescontoClienteVIP() {
         CalculadoraDesconto calc = new CalculadoraDesconto();
         assertEquals(90.0, calc.calcular("VIP", 100.0));
     }
 
     @Test
-    public void testCalcularDescontoPremium() {
+    void testDescontoClientePremium() {
         CalculadoraDesconto calc = new CalculadoraDesconto();
-        assertEquals(80.0, calc.calcular("Premium", 100.0));
-    }
-}
-
-class CalculadoraDesconto {
-    public double calcular(String cliente, double valor) {
-        if (cliente.equals("Premium")){
-            return valor*0.8;
-        }else if (cliente.equals("VIP")){
-            return valor*0.9;
-        }else if (cliente.equals("Comum")){
-            return valor*1;
-        }else  {
-            return valor;
-        }
+        assertEquals(80.0, calc.calcular("PREMIUM", 100.0));
     }
 }
